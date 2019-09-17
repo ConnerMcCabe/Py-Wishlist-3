@@ -1,0 +1,13 @@
+{% extends 'index.html' %}
+ 
+{% block content %}
+    <h1>Add Wish Item</h1>
+    <hr>
+<form class="pure-form" action="" method="post">
+{% csrf_token %}
+    <table>
+        {{ form.as_p }}
+        <input type="submit" value="ADD ITEM" class="pure-button">
+    </table>
+</form>
+{% endblock %}
